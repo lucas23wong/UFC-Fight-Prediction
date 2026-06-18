@@ -1,0 +1,13 @@
+# Data
+data/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Mac
+.DS_Store
