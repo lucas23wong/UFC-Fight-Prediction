@@ -24,5 +24,5 @@ hyperparameter tuning, and evaluation.
 ## Jupyter Notebooks
 | Notebook | Purpose | 
 | --- | --- | 
-| `01_cleaning_feature_engineering.ipynb` | Cleans and prepares dataset for model training by condensing ranking columns and eliminating unecessary fight information | 
-| `02_eda.ipynb` | Explores cleaned dataset to understand fighter differential distributions and spread of weight class data. Findings here help inform model feature selection |
+| `01_cleaning_feature_engineering.ipynb` | Cleans and prepares dataset for model training by condensing ranking columns and eliminating unecessary fight information. | 
+| `02_eda.ipynb` | Explores cleaned dataset to understand fighter differential distributions and spread of weight class data. Findings here help inform model feature selection. |
