@@ -20,6 +20,8 @@ hyperparameter tuning, and evaluation.
 
 ## Data 
 - The CSV data for this project was downloaded from Kaggle: https://www.kaggle.com/datasets/mdabbert/ultimate-ufc-dataset/data
+- Cleaned dataset containts 7,177 fight records from 2010-03-21 to 2026-03-28. 
+- Fighter differentials are calculated by Blue_STAT - Red_STAT 
 
 ## Jupyter Notebooks
 | Notebook | Purpose | 
