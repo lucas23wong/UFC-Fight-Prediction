@@ -28,3 +28,4 @@ hyperparameter tuning, and evaluation.
 | --- | --- | 
 | `01_cleaning_feature_engineering.ipynb` | Cleans and prepares dataset for model training by condensing ranking columns and eliminating unecessary fight information. | 
 | `02_eda.ipynb` | Explores cleaned dataset to understand fighter differential distributions and spread of weight class data. Findings here help inform model feature selection. |
+| `03_baseline_model.ipynb` | Establishes the baseline logistic regression model to compare with the additional models implemented in `04_model_comparison.ipynb`. A baseline accuracy and confusion matrix is provided. | 
