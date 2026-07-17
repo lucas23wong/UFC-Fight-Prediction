@@ -2,12 +2,13 @@
 
 ## Project Overview 
 
-This project is an end-to-end machine learning pipeline that predicts UFC fight outcomes using pre-fight fighter data (physical attributes, fighting styles, records, etc). The pipeline covers data cleaning, feature engineering, and comparison of multiple classification models (logistic regression, random forest, gradient boosting) with cross-validation, 
-hyperparameter tuning, and evaluation.
+This project is an end-to-end machine learning pipeline that predicts UFC fight outcomes using pre-fight fighter data (physical attributes, fighting styles, records, etc). The pipeline covers data cleaning, feature engineering, and comparison of multiple classification models (logistic regression, random forest, gradient boosting) with cross-validation, hyperparameter tuning, and evaluation.
 
 ## Project Structure 
 - `data/` -> stores raw and cleaned CSV files ready to be used by ML models (data is not committed, see `.gitignore`)
-- `notebooks/` -> stores jupyter notebooks needed for data cleaning, feature engineering, and training + testing ML models. 
+- `notebooks/` -> stores jupyter notebooks needed for data cleaning, feature engineering, and training + testing ML models
+- `src/` -> saves preprocessing scripts used in multiple notebooks 
+- `models/` -> saves final tuned model
 - `requirements.txt` -> Python dependencies 
 
 ## Tech Stack
@@ -29,3 +30,5 @@ hyperparameter tuning, and evaluation.
 | `01_cleaning_feature_engineering.ipynb` | Cleans and prepares dataset for model training by condensing ranking columns and eliminating unecessary fight information. | 
 | `02_eda.ipynb` | Explores cleaned dataset to understand fighter differential distributions and spread of weight class data. Findings here help inform model feature selection. |
 | `03_baseline_model.ipynb` | Establishes the baseline logistic regression model to compare with the additional models implemented in `04_model_comparison.ipynb`. A baseline accuracy and confusion matrix is provided. | 
+| `04_model_comparison.ipynb` | 3 additional models are implemented (Random forest, Gradient Boost, XGBoost), performance is compared, and one model is selected for hyperparameter tuning. | 
+| `05_hyperparameter_tuning.ipynb` | The chosen model is tuned using`RandomizedSearchCV` with 5-fold cross-validation. It is then loaded into `models` |
